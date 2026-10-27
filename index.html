@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Creation By Jhen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <a href="#home" class="logo">Sweet Creation <span>By Jhen</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+        ☰
+    </button>
+
+    <nav class="navbar" id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#product">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">BAKED WITH LOVE</p>
+            <h1>Sweet Creation<br><span>By Jhen</span></h1>
+            <h2>Every Cake Tells a Sweet Story</h2>
+            <p>
+                Make every celebration sweeter with our delicious
+                and beautiful cakes, made with love for your special moments.
+            </p>
+            <a href="#product" class="btn">Explore Our Cakes</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="birth.jpg" alt="Beautiful birthday cake">
+        </div>
+    </section>
+
+    <section class="about section" id="about">
+        <div class="section-heading">
+            <p class="eyebrow">OUR STORY</p>
+            <h2>About <span>Sweet Creation</span></h2>
+        </div>
+
+        <div class="about-content">
+            <p>
+                Welcome to Sweet Creation By Jhen! We believe that every
+                celebration deserves something sweet. Our cakes are made
+                to bring happiness to birthdays, anniversaries, family
+                gatherings, and other special occasions.
+            </p>
+            <p>
+                Whether you are celebrating a big milestone or a simple
+                happy moment, we are happy to be part of your sweet story.
+            </p>
+        </div>
+    </section>
+
+    <section class="products section" id="product">
+        <div class="section-heading">
+            <p class="eyebrow">MADE WITH LOVE</p>
+            <h2>Our Sweet <span>Creations</span></h2>
+            <p>Find a cake for your next special celebration.</p>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="search"
+                id="cakeSearch"
+                placeholder="Search cakes..."
+                aria-label="Search cake products"
+            >
+        </div>
+
+        <div class="cake-grid" id="cakeGrid">
+            <article class="cake-card" data-name="birthday cake">
+                <button class="cake-photo" type="button"
+                    data-image="cake1.jpg" data-title="Birthday Cake"
+                    aria-label="View Birthday Cake photo">
+                    <img src="cake1.jpg" alt="Birthday cake">
+                </button>
+                <div class="cake-info">
+                    <h3>Birthday Cake</h3>
+                    <p>A sweet centerpiece for your special day.</p>
+                    <button class="order-btn" data-cake="Birthday Cake">
+                        Inquire Now
+                    </button>
+                </div>
+            </article>
+
+            <article class="cake-card" data-name="chocolate cake">
+                <button class="cake-photo" type="button"
+                    data-image="cake2.jpg" data-title="Chocolate Cake"
+                    aria-label="View Chocolate Cake photo">
+                    <img src="cake2.jpg" alt="Chocolate cake">
+                </button>
+                <div class="cake-info">
+                    <h3>Chocolate Cake</h3>
+                    <p>A delicious choice for chocolate lovers.</p>
+                    <button class="order-btn" data-cake="Chocolate Cake">
+                        Inquire Now
+                    </button>
+                </div>
+            </article>
+
+            <article class="cake-card" data-name="strawberry cake">
+                <button class="cake-photo" type="button"
+                    data-image="cake3.jpg" data-title="Strawberry Cake"
+                    aria-label="View Strawberry Cake photo">
+                    <img src="cake3.jpg" alt="Strawberry cake">
+                </button>
+                <div class="cake-info">
+                    <h3>Strawberry Cake</h3>
+                    <p>A lovely cake for your sweetest moments.</p>
+                    <button class="order-btn" data-cake="Strawberry Cake">
+                        Inquire Now
+                    </button>
+                </div>
+            </article>
+
+            <article class="cake-card" data-name="custom cake">
+                <button class="cake-photo" type="button"
+                    data-image="cake4.jpg" data-title="Custom Cake"
+                    aria-label="View Custom Cake photo">
+                    <img src="cake4.jpg" alt="Custom cake">
+                </button>
+                <div class="cake-info">
+                    <h3>Custom Cake</h3>
+                    <p>Share your idea for a personalized cake.</p>
+                    <button class="order-btn" data-cake="Custom Cake">
+                        Inquire Now
+                    </button>
+                </div>
+            </article>
+
+            <article class="cake-card" data-name="special occasion cake">
+                <button class="cake-photo" type="button"
+                    data-image="cake5.jpg" data-title="Special Occasion Cake"
+                    aria-label="View Special Occasion Cake photo">
+                    <img src="cake5.jpg" alt="Special occasion cake">
+                </button>
+                <div class="cake-info">
+                    <h3>Special Occasion Cake</h3>
+                    <p>Make your memorable moments even sweeter.</p>
+                    <button class="order-btn" data-cake="Special Occasion Cake">
+                        Inquire Now
+                    </button>
+                </div>
+            </article>
+        </div>
+
+        <p class="no-results" id="noResults" hidden>
+            No cakes found. Try another search.
+        </p>
+    </section>
+
+    <section class="contact section" id="contact">
+        <div class="section-heading">
+            <p class="eyebrow">LET'S MAKE IT SWEET</p>
+            <h2>Contact <span>Us</span></h2>
+            <p>Have a cake in mind? Send us an inquiry!</p>
+        </div>
+
+        <div class="contact-card">
+            <p><strong>Business:</strong> Sweet Creation By Jhen</p>
+            <p><strong>Location:</strong> Gabay 1, Margosatubig, Zamboanga del Sur</p>
+            <p><strong>Phone:</strong> 0945 706 8519</p>
+
+            <form id="contactForm">
+                <label for="customerName">Your Name</label>
+                <input id="customerName" name="customerName"
+                    type="text" placeholder="Enter your name" required>
+
+                <label for="customerPhone">Your Contact Number</label>
+                <input id="customerPhone" name="customerPhone"
+                    type="tel" placeholder="Enter your number" required>
+
+                <label for="cakeChoice">Cake You Want</label>
+                <input id="cakeChoice" name="cakeChoice"
+                    type="text" placeholder="Example: Birthday Cake" required>
+
+                <label for="customerMessage">Message or Order Details</label>
+                <textarea id="customerMessage" name="customerMessage"
+                    rows="4" placeholder="Cake size, design, date, and other details"
+                    required></textarea>
+
+                <button class="btn" type="submit">Send Inquiry via WhatsApp</button>
+            </form>
+
+            <p class="form-note">
+                Your inquiry will open in WhatsApp for you to review and send.
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <a href="#home" class="footer-logo">Sweet Creation By Jhen</a>
+    <p>Every Cake Tells a Sweet Story.</p>
+    <p>Gabay 1, Margosatubig, Zamboanga del Sur</p>
+    <p>Phone: 0945 706 8519</p>
+    <p class="copyright">
+        &copy; 2026 Sweet Creation By Jhen. All rights reserved.
+    </p>
+    <p class="developer">Website developed by Ryan M. Ello</p>
+</footer>
+
+<!-- Cake photo viewer -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose"
+        aria-label="Close photo viewer">&times;</button>
+    <img id="lightboxImage" src="" alt="">
+    <p id="lightboxTitle"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
